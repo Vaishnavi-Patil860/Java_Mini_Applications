@@ -32,15 +32,15 @@ class BankProgram
                 case 1:{
 
                           System.out.println();
-                          System.out.print("   create your account  ");
+                          System.out.print("   Create your account  ");
                           System.out.println();
 
                           sc.nextLine();
                           System.out.println();
-                          System.out.print("    username :");
+                          System.out.print("    Username :");
                           name = sc.nextLine();
                           System.out.println();
-                          System.out.print("    email :  ");
+                          System.out.print("    Email :  ");
                           email = sc.next();
                           System.out.println();
                           System.out.print("    Address : ");
@@ -104,37 +104,37 @@ class BankProgram
                                 System.out.println();
                                 System.out.println("home page");
                                 System.out.println();
-                                System.out.println("1. deposit ammount");
-                                System.out.println("2. withdraw ammount");
-                                System.out.println("3. check balance ");
-                                System.out.println("4. statement");
-                                System.out.println("5. loan");
-                                System.out.println("6. profile");
-                                System.out.println("7. logout");
+                                System.out.println("1. Deposit ammount");
+                                System.out.println("2. Withdraw ammount");
+                                System.out.println("3. Check balance ");
+                                System.out.println("4. Statement");
+                                System.out.println("5. Loan");
+                                System.out.println("6. Profile");
+                                System.out.println("7. Logout");
                                 System.out.println();
-                                System.out.print("   enter your option :");
+                                System.out.print("   Enter your option :");
                                 int opt = new Scanner(System.in).nextInt();
                                 System.out.println();
 
                          switch(opt)
                          {
                              case 1 :{
-                                   System.out.print("   deposit ammount :");
+                                   System.out.print("   Deposit ammount :");
                                    System.out.println();
-                                   System.out.print("   enter the ammount: ");
+                                   System.out.print("   Enter the ammount: ");
                                    double depAmt = new Scanner(System.in).nextDouble();
                                    bal += depAmt;
-                                   System.out.print("   amount deposited");
+                                   System.out.print("   Amount deposited Successfully");
                                    statement.add("deposit :"  + depAmt + "rs");
                                    break;
                                   }
                               case 2 :
                               {
-                                   System.out.print("withdraw module");
+                                   System.out.print(" Withdraw module");
                                    System.out.println();
-                                   System.out.print("ENTER YOUR AMMOUNT :");
+                                   System.out.print(" ENTER YOUR AMMOUNT :");
                                    double withAmt = new Scanner(System.in).nextDouble();
-                                   System.out.print("ENTER THE PIN: ");
+                                   System.out.print(" ENTER THE PIN: ");
                                    int pin1 = new Scanner(System.in).nextInt();
                                        if(pin1 == pin){
                                           if(withAmt <= bal)
@@ -149,7 +149,7 @@ class BankProgram
                                             }
                                           }
                                         else {
-                                            System.out.println("invalid pin");
+                                            System.out.println("Invalid pin");
                                              }
                                              break;
                                             }
