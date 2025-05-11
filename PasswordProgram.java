@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 public class PasswordProgram {
+   
     public static void main(String[] args)  throws InterruptedException {
         
         Scanner sc = new Scanner(System.in);
         int storedPin = 1234;
-        int duration = 5000;
+        int duration = 3000;
         outerLoop:
         for(;;)
         {
